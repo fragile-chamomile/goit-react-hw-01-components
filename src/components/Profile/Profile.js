@@ -3,14 +3,14 @@ import { ProfileWrapper, Description, Avatar, Name, Stats, StatsItem, Label, Qua
 import PropTypes from 'prop-types';
 
 
-function Profile({ username, tag, location, avatar, followers, views, likes}) {
+function Profile({ username, tag, location, avatar, followers, views, likes }) {
     return (
         <ProfileWrapper>
             <Description>
                 <Avatar src={avatar} alt="User avatar"></Avatar>
                 <Name>{username}</Name>
-                <p class="tag">{tag}</p>
-                <p class="location">{location}</p>
+                <p>{tag}</p>
+                <p>{location}</p>
             </Description>
 
             <Stats>
