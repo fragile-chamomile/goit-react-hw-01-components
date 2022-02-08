@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 function Statistics({title, stats}) {
     return (
         <StatisticsWrapper>
-            <Title>{title}</Title>
+            {title && <Title>{title}</Title>}
 
             <Stats>
                 {stats.map(({id, label, percentage}) =>
